@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GameRatis</string>
+    <string name="home_game">Game</string>
+    <string name="favorite_game">Favorite</string>
+</resources>
