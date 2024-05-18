@@ -8,9 +8,9 @@ import java.io.IOException
 private const val STARTING_PAGE_INDEX = 1
 class GamePagingSource (
     private val gameAPI: GameAPI,
-    private val platform: String? = null,
-    private val category: String? = null,
-    private val sortBy: String? = null
+    private val platform: String?,
+    private val category: String?,
+    private val sortBy: String?
 ) : PagingSource<Int, GameRatis>() {
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, GameRatis> {
         return try {
@@ -18,7 +18,11 @@ class GamePagingSource (
             val response =
 //                kondisi jika ada inputan platform, kategori, sorty by (tidak null)
                 if (platform != null || category != null || sortBy != null){
-                    gameAPI.getSearchGame(platform, category, sortBy, position)
+                    gameAPI.getSearch(
+                        platform = platform ?: "",
+                        category = category ?: "",
+                        sortBy = sortBy ?: ""
+                    )
                 } // jika null atau tidak  ada inputan untuk searching
                 else{
                     gameAPI.getPosts(position)

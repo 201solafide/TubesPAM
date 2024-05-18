@@ -1,7 +1,8 @@
 package com.example.gameratis.data.remote
 
 import android.os.Parcelable
-import kotlinx.android.parcel.Parcelize
+//import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class GameRatis (

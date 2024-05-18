@@ -9,15 +9,14 @@ interface GameAPI {
     }
     @GET("games")
     suspend fun getPosts(
-        @Query("page") page: Int
+        @Query("page") position: Int
     ): GameResponse
 //    suspend fun getPosts(position: Int): Call<ArrayList<GameResponse>>
 
     @GET("games?platform")
-    suspend fun getSearchGame(
-        @Query("platform") platform: String? = null,
-        @Query("category") category: String? = null,
-        @Query("sort-by") sortBy: String? = null,
-        position: Int
+    suspend fun getSearch(
+        @Query("platform") platform: String,
+        @Query("category") category: String,
+        @Query("sort-by") sortBy: String
     ): GameResponse
 }

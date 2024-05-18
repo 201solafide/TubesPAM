@@ -13,27 +13,49 @@ import kotlinx.coroutines.flow.Flow
 class GameRepository @Inject constructor(private val gameAPI: GameAPI) {
     // fungsi memanggil get now playing game
     // kita mengatur LiveData menjadi Flow
-    fun getPosts(): Flow<PagingData<GameRatis>> {
-        return Pager(
+
+    fun getPosts() =
+        Pager(
             config = PagingConfig(
                 pageSize = 20,
                 maxSize = 200,
                 enablePlaceholders = false
             ),
-            pagingSourceFactory = {GamePagingSource(gameAPI)}
-        ).flow
+            pagingSourceFactory = {GamePagingSource(gameAPI, null, null, null)}
 
-    }
+        ).liveData
+
+//    fun getPosts(): Flow<PagingData<GameRatis>> {
+//        return Pager(
+//            config = PagingConfig(
+//                pageSize = 20,
+//                maxSize = 200,
+//                enablePlaceholders = false
+//            ),
+//            pagingSourceFactory = {GamePagingSource(gameAPI)}
+//        ).flow
+//
+//    }
 
     // Metode searching
-    fun getSearchGames(platform: String?, category: String?, sortBy: String?): Flow<PagingData<GameRatis>> {
-        return Pager(
+
+    fun getSearchGames(platform: String, category: String, sortBy: String) =
+        Pager(
             config = PagingConfig(
                 pageSize = 20,
                 maxSize = 200,
                 enablePlaceholders = false
             ),
             pagingSourceFactory = {GamePagingSource(gameAPI, platform, category, sortBy)}
-        ).flow
-    }
+        ).liveData
+//    fun getSearchGames(platform: String?, category: String?, sortBy: String?): Flow<PagingData<GameRatis>> {
+//        return Pager(
+//            config = PagingConfig(
+//                pageSize = 20,
+//                maxSize = 200,
+//                enablePlaceholders = false
+//            ),
+//            pagingSourceFactory = {GamePagingSource(gameAPI, platform, category, sortBy)}
+//        ).flow
+//    }
 }
