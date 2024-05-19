@@ -16,6 +16,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GameRatis"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="hilt.enableAutoInstallInApp"
+            android:value="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

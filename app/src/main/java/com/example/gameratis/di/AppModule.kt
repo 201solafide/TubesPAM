@@ -7,15 +7,15 @@ import com.example.gameratis.data.local.FavoriteGameDatabase
 import com.example.gameratis.data.remote.GameAPI
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
-import dagger.hilt.migration.DisableInstallInCheck
 
-@DisableInstallInCheck
 @Module
-@Singleton
+@InstallIn(SingletonComponent::class)
 object AppModule {
 
 //    kita profit retrofit objek
@@ -47,3 +47,4 @@ object AppModule {
     fun provideFavGameDao(db: FavoriteGameDatabase) = db.getFavoriteGameDao()
 
 }
+
