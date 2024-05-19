@@ -106,6 +106,7 @@ dependencies {
     // dagger hilt
     implementation("com.google.dagger:hilt-android:2.40.5")
     kapt("com.google.dagger:hilt-android-compiler:2.40.5")
+    annotationProcessor ("com.google.dagger:hilt-android-compiler:2.40.5")
 
     // navigation fragmnet
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")

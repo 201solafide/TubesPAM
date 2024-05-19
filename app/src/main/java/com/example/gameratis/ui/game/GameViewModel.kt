@@ -9,10 +9,11 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
 import com.example.gameratis.data.remote.GameRepository
 import dagger.assisted.Assisted
+import dagger.assisted.AssistedInject
 
 @SuppressLint("ParcelCreator")
 @Suppress("DEPRECATION")
-class GameViewModel @ViewModelInject constructor(private val repository: GameRepository,
+class GameViewModel @AssistedInject @ViewModelInject constructor(private val repository: GameRepository,
  @Assisted state: SavedStateHandle
 ) : ViewModel(), Parcelable {
 
