@@ -11,9 +11,20 @@ import com.example.gameratis.R
 import com.example.gameratis.data.remote.GameRatis
 import com.example.gameratis.databinding.ItemGameBinding
 
-class GameAdapter : PagingDataAdapter<GameRatis, GameAdapter.GameViewHolder>(COMPARATOR) {
+class GameAdapter(private val listener : OnItemClickListener) : PagingDataAdapter<GameRatis, GameAdapter.GameViewHolder>(COMPARATOR) {
     inner class GameViewHolder(private val binding: ItemGameBinding)
         : RecyclerView.ViewHolder(binding.root){
+            init {
+                binding.root.setOnClickListener {
+                    val position = bindingAdapterPosition
+                    if (position != RecyclerView.NO_POSITION){
+                        val item = getItem(position)
+                        if (item != null){
+                            listener.onItemClick(item)
+                        }
+                    }
+                }
+            }
             fun bind(gameRatis: GameRatis){
                 with(binding){
                     Glide.with(itemView)
@@ -50,6 +61,11 @@ class GameAdapter : PagingDataAdapter<GameRatis, GameAdapter.GameViewHolder>(COM
                 oldItem == newItem
 
         }
+    }
+
+    // membangun interface untuk dekripsi
+    interface OnItemClickListener{
+        fun onItemClick(gameRatis: GameRatis)
     }
 
 }

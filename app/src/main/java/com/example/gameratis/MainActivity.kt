@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // set toolbar sebagain actionbar
+        setSupportActionBar(binding.toolbar)
+
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_contain) as NavHostFragment
         navController = navHostFragment.findNavController()
 
@@ -31,6 +34,10 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             navBottom.setupWithNavController(navController)
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }
 

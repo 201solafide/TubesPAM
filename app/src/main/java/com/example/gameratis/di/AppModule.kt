@@ -1,8 +1,13 @@
 package com.example.gameratis.di
 
+import android.content.Context
+import androidx.room.Room
+import androidx.room.RoomDatabase
+import com.example.gameratis.data.local.FavoriteGameDatabase
 import com.example.gameratis.data.remote.GameAPI
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.android.qualifiers.ApplicationContext
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
@@ -24,4 +29,19 @@ object AppModule {
     @Singleton
     fun provideGameApi(retrofit: Retrofit): GameAPI =
         retrofit.create(GameAPI::class.java)
+
+    @Provides
+    @Singleton
+    fun provideFavGameDatabase(
+        @ApplicationContext app:Context
+    ) = Room.databaseBuilder(
+        app,
+        FavoriteGameDatabase::class.java,
+        "Free_Game"
+    ).build()
+
+    @Provides
+    @Singleton
+    fun provideFavGameDao(db: FavoriteGameDatabase) = db.getFavoriteGameDao()
+
 }

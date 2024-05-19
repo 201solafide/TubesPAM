@@ -3,7 +3,11 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("kotlin-kapt")
     id("kotlin-parcelize")
-}
+
+//    add navigation safeargs.kotlin
+    id("androidx.navigation.safeargs.kotlin")
+    id("dagger.hilt.android.plugin")
+    }
 
 android {
     namespace = "com.example.gameratis"
@@ -53,6 +57,10 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    kapt{
+        correctErrorTypes = true
+    }
 }
 
 dependencies {
@@ -93,16 +101,18 @@ dependencies {
 
     // viewModelInject
     implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
-    annotationProcessor("androidx.hilt:hilt-compiler:1.2.0")
+    kapt("androidx.hilt:hilt-compiler:1.2.0")
 
     // dagger hilt
     implementation("com.google.dagger:hilt-android:2.40.5")
-    annotationProcessor("com.google.dagger:hilt-android-compiler:2.40.5")
+    kapt("com.google.dagger:hilt-android-compiler:2.40.5")
 
     // navigation fragmnet
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+
     implementation("com.google.android.material:material:1.12.0")
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

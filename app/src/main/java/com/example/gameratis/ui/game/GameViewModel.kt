@@ -1,7 +1,8 @@
-@file:Suppress("DEPRECATION")
-
 package com.example.gameratis.ui.game
 
+import android.annotation.SuppressLint
+import android.os.Parcel
+import android.os.Parcelable
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
@@ -9,10 +10,11 @@ import androidx.lifecycle.switchMap
 import com.example.gameratis.data.remote.GameRepository
 import dagger.assisted.Assisted
 
+@SuppressLint("ParcelCreator")
 @Suppress("DEPRECATION")
 class GameViewModel @ViewModelInject constructor(private val repository: GameRepository,
  @Assisted state: SavedStateHandle
-) : ViewModel() {
+) : ViewModel(), Parcelable {
 
     companion object{
         private const val PLATFORM_QUERY = "platform_query"
@@ -42,6 +44,15 @@ class GameViewModel @ViewModelInject constructor(private val repository: GameRep
         categoryQuery.value = category
         sortbyQuery.value = sortBy
     }
+
+    override fun writeToParcel(parcel: Parcel, flags: Int) {
+
+    }
+
+    override fun describeContents(): Int {
+        return 0
+    }
+
 }
 
 
