@@ -1,15 +1,17 @@
 package com.example.gameratis.ui.details
 
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
 import com.example.gameratis.data.local.FavoriteGame
 import com.example.gameratis.data.local.FavoriteGameRepository
 import com.example.gameratis.data.remote.GameRatis
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class DetailViewModel @ViewModelInject constructor(
+@HiltViewModel
+class DetailViewModel @Inject constructor(
     private val repository: FavoriteGameRepository
 ): ViewModel(){
     fun addToFavorite(game:GameRatis){

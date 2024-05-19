@@ -3,18 +3,18 @@ package com.example.gameratis.ui.game
 import android.annotation.SuppressLint
 import android.os.Parcel
 import android.os.Parcelable
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
 import com.example.gameratis.data.remote.GameRepository
-import dagger.assisted.Assisted
-import dagger.assisted.AssistedInject
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
 @SuppressLint("ParcelCreator")
 @Suppress("DEPRECATION")
-class GameViewModel @AssistedInject @ViewModelInject constructor(private val repository: GameRepository,
-                                                                 @Assisted state: SavedStateHandle
+@HiltViewModel
+class GameViewModel @Inject constructor(private val repository: GameRepository,
+                                        private val state: SavedStateHandle
 ) : ViewModel(), Parcelable {
     companion object{
         private const val PLATFORM_QUERY = "platform_query"
@@ -25,11 +25,11 @@ class GameViewModel @AssistedInject @ViewModelInject constructor(private val rep
     }
     private val platformQuery = state.getLiveData(PLATFORM_QUERY, EMPTY_QUERY)
     private val categoryQuery = state.getLiveData(CATEGORY_QUERY, EMPTY_QUERY)
-    private val sortbyQuery = state.getLiveData(SORTBY_QUERY, EMPTY_QUERY)
+    private val sortByQuery = state.getLiveData(SORTBY_QUERY, EMPTY_QUERY)
 
     val games = platformQuery.switchMap { platform ->
         categoryQuery.switchMap { category ->
-            sortbyQuery.switchMap { sortBy ->
+            sortByQuery.switchMap { sortBy ->
                 if (!sortBy.isEmpty() || !category.isEmpty() || !platform.isEmpty()){
                     repository.getSearchGames(platform, category, sortBy)
                 }else {
@@ -42,7 +42,7 @@ class GameViewModel @AssistedInject @ViewModelInject constructor(private val rep
     fun searchGames(platfrom: String, category: String, sortBy: String){
         platformQuery.value = platfrom
         categoryQuery.value = category
-        sortbyQuery.value = sortBy
+        sortByQuery.value = sortBy
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
