@@ -5,8 +5,10 @@ import androidx.room.RoomDatabase
 
 @Database(
     entities = [FavoriteGame::class],
+    exportSchema = false,
     version = 1
 )
+
 abstract class FavoriteGameDatabase : RoomDatabase(){
     abstract fun getFavoriteGameDao(): FavoriteGameDao
 }

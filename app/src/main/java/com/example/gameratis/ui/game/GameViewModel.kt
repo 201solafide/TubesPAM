@@ -14,9 +14,8 @@ import dagger.assisted.AssistedInject
 @SuppressLint("ParcelCreator")
 @Suppress("DEPRECATION")
 class GameViewModel @AssistedInject @ViewModelInject constructor(private val repository: GameRepository,
- @Assisted state: SavedStateHandle
+                                                                 @Assisted state: SavedStateHandle
 ) : ViewModel(), Parcelable {
-
     companion object{
         private const val PLATFORM_QUERY = "platform_query"
         private const val CATEGORY_QUERY = "category_query"

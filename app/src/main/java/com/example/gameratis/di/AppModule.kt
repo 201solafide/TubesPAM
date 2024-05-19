@@ -2,7 +2,6 @@ package com.example.gameratis.di
 
 import android.content.Context
 import androidx.room.Room
-import androidx.room.RoomDatabase
 import com.example.gameratis.data.local.FavoriteGameDatabase
 import com.example.gameratis.data.remote.GameAPI
 import dagger.Module
