@@ -1,6 +1,5 @@
 package com.example.gameratis.ui.details
 
-import android.annotation.SuppressLint
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View

@@ -11,8 +11,8 @@ class FavoriteGameRepository @Inject constructor(
 
     fun getFavoriteGame() = favoriteGameDao.getFavoriteGame()
 
-    suspend fun checkGame(id: String) = favoriteGameDao.checkGame(id)
-    suspend fun removeFromFavorite(id: String){
+    suspend fun checkGame(id: Int) = favoriteGameDao.checkGame(id)
+    suspend fun removeFromFavorite(id: Int){
         favoriteGameDao.removeFavorite(id)
     }
 }

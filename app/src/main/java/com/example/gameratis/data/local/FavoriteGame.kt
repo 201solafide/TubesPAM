@@ -9,7 +9,7 @@ import java.io.Serializable
 @Entity(tableName = "favorite_game")
 @Parcelize
 data class FavoriteGame(
-    val id_game: String,
+    val id_game: Int,
     val title: String,
     val thumbnail: String,
     val short_description: String,

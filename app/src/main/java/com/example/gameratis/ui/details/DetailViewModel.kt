@@ -27,16 +27,16 @@ class DetailViewModel @Inject constructor(
                     game.platform,
                     game.publisher,
                     game.developer,
-                    game.release_data,
+                    game.release_date,
                     game.freetogame_profile_url
                 )
             )
         }
     }
 
-    suspend fun checkGame(id: String) = repository.checkGame(id)
+    suspend fun checkGame(id: Int) = repository.checkGame(id)
 
-    fun removeFromFavorite(id: String){
+    fun removeFromFavorite(id: Int){
         CoroutineScope(Dispatchers.IO).launch {
             repository.removeFromFavorite(id)
         }

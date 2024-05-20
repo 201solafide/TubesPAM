@@ -14,8 +14,8 @@ interface FavoriteGameDao {
     fun getFavoriteGame(): LiveData<List<FavoriteGame>>
 
     @Query("SELECT count(*) FROM favorite_game WHERE favorite_game.id_game = :id")
-    suspend fun checkGame(id: String):  Int
+    suspend fun checkGame(id: kotlin.Int):  Int
 
     @Query("DELETE FROM favorite_game WHERE favorite_game.id_game = :id")
-    suspend fun removeFavorite(id: String): Int
+    suspend fun removeFavorite(id: kotlin.Int): Int
 }
