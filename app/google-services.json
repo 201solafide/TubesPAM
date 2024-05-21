@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "725172135574",
+    "project_id": "tubes-pam-8afa9",
+    "storage_bucket": "tubes-pam-8afa9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725172135574:android:9ba82424a16b27f7a8c4b7",
+        "android_client_info": {
+          "package_name": "com.example.gameratis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSKd64tLX2ZzLPpZ7C3J3MCl42r3hrHgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

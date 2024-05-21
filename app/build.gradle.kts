@@ -7,6 +7,8 @@ plugins {
 //    add navigation safeargs.kotlin
     id("androidx.navigation.safeargs.kotlin")
     id("dagger.hilt.android.plugin")
+
+    id("com.google.gms.google-services")
     }
 
 android {
@@ -115,7 +117,7 @@ dependencies {
 
     // firebase
     implementation ("androidx.databinding:databinding-runtime:8.3.1")
-    implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
+    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth-ktx:22.3.1")
     implementation ("com.google.firebase:firebase-firestore-ktx:24.11.0")

@@ -9,7 +9,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.gameratis.databinding.ActivityMainBinding
-import com.google.firebase.FirebaseApp
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -21,11 +20,7 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        // Initialize Firebase
-        FirebaseApp.initializeApp(this)
-
-        // set toolbar sebagain actionbar
+        // set toolbar sebagai actionbar
         setSupportActionBar(binding.toolbar)
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_contain) as NavHostFragment
