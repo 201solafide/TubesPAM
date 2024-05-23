@@ -13,7 +13,7 @@ class SplashScreen : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.splashText.animate().setDuration(3000).alpha(1f).withEndAction {
-            val i = Intent(this, LoginActivity::class.java)
+            val i = Intent(this, MainActivity::class.java)
             startActivity(i)
             finish()
         }

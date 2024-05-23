@@ -9,7 +9,10 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class GameRepository @Inject constructor(private val gameAPI: GameAPI) {
+class GameRepository @Inject constructor() {
+
+    private val gameAPI = RetrofitInstance.api
+
     fun getPosts(): LiveData<PagingData<GameRatis>> =
         Pager(
             config = PagingConfig(

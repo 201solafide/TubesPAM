@@ -28,7 +28,7 @@ class GameAdapter(private val listener : OnItemClickListener) : PagingDataAdapte
             fun bind(gameRatis: GameRatis){
                 with(binding){
                     Glide.with(itemView)
-                        .load("${gameRatis.BASE_URL}.${gameRatis.platform}")
+                        .load(gameRatis.thumbnail)
                         .centerCrop()
                         .transition(DrawableTransitionOptions.withCrossFade())
                         .error(R.drawable.ic_error)
@@ -45,9 +45,9 @@ class GameAdapter(private val listener : OnItemClickListener) : PagingDataAdapte
     }
 
     override fun onBindViewHolder(holder: GameViewHolder, position: Int) {
-        val currtentItem = getItem(position)
-        if (currtentItem != null){
-            holder.bind(currtentItem)
+        val currentItem = getItem(position)
+        if (currentItem != null){
+            holder.bind(currentItem)
         }
     }
 

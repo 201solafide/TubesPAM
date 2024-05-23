@@ -33,7 +33,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         binding.apply {
             val gameRatis = args.gameRatis
             Glide.with(this@DetailsFragment)
-                .load("${gameRatis.BASE_URL} ${gameRatis.thumbnail}")
+                .load(gameRatis.thumbnail)
                 .error(R.drawable.ic_error)
                 .listener(object : RequestListener<Drawable>{
                     override fun onLoadFailed(
@@ -61,7 +61,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
 
                 }).into(ivGamePoster)
 
-            // variaael mengatur toggle
+            // variabel mengatur toggle
             var isChecked = false
             CoroutineScope(Dispatchers.IO).launch {
                 val count = viewModel.checkGame(gameRatis.id)

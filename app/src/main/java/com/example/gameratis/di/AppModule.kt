@@ -17,7 +17,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object AppModule {
 
-//    kita profit retrofit objek
+    // Provide Retrofit instance
     @Provides
     @Singleton
     fun provideRetrofit(): Retrofit =
@@ -26,24 +26,29 @@ object AppModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
+    // Provide GameAPI instance
     @Provides
     @Singleton
     fun provideGameApi(retrofit: Retrofit): GameAPI =
         retrofit.create(GameAPI::class.java)
 
+    // Provide FavoriteGameDatabase instance
     @Provides
     @Singleton
     fun provideFavGameDatabase(
-        @ApplicationContext app:Context
-    ) = Room.databaseBuilder(
+        @ApplicationContext app: Context
+    ): FavoriteGameDatabase = Room.databaseBuilder(
         app,
         FavoriteGameDatabase::class.java,
         "Free_Game"
-    ).build()
+    )
+        .fallbackToDestructiveMigration()
+        .build()
 
+    // Provide DAO instance
     @Provides
     @Singleton
     fun provideFavGameDao(db: FavoriteGameDatabase) = db.getFavoriteGameDao()
 
-}
 
+}

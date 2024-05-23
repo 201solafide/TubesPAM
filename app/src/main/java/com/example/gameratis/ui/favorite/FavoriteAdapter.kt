@@ -8,7 +8,6 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.example.gameratis.R
 import com.example.gameratis.data.local.FavoriteGame
 import com.example.gameratis.databinding.ItemGameBinding
-import kotlin.contracts.contract
 
 class FavoriteAdapter : RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>() {
 
@@ -19,7 +18,7 @@ class FavoriteAdapter : RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>
         this.onItemClickCallback = onItemClickCallback
     }
 
-    // set onclick adpater
+    // set onclick adapter
     fun setGameList(list: List<FavoriteGame>){
         this.list = list
         notifyDataSetChanged()
@@ -30,7 +29,7 @@ class FavoriteAdapter : RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>
         fun bind(favoriteGame: FavoriteGame){
             with(binding){
                 Glide.with(itemView)
-                    .load("${favoriteGame.BASE_URL}${favoriteGame.thumbnail}")
+                    .load(favoriteGame.thumbnail)
                     .centerCrop()
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .error(R.drawable.ic_error)

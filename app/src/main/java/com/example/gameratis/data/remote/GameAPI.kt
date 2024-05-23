@@ -19,4 +19,9 @@ interface GameAPI {
         @Query("category") category: String,
         @Query("sort-by") sortBy: String
     ): List<GameRatis>
+
+    // @GET("game")
+    //suspend fun getGameDetailById(
+    //    @Query("id") gameId: Int
+    //): GameDetailDto
 }
