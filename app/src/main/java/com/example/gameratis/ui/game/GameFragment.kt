@@ -85,6 +85,7 @@ class GameFragment : Fragment(R.layout.fragment_game), GameAdapter.OnItemClickLi
                     val category = parameters["category"] ?: ""
                     val sortBy = parameters["sortBy"] ?: ""
 
+                    binding.rvGame.scrollToPosition(0)
                     viewModel.searchGames(platform, category, sortBy)
                     searchView.clearFocus()
 
