@@ -117,10 +117,9 @@ Fitur Detail Game menyediakan informasi lengkap tentang suatu game, termasuk des
     <p>Berikut adalah API yang kami gunakan untuk aplikasi kami:</p>
     <ul>
       <li><a href="https://www.freetogame.com/api-doc">FreeToGame API</a>: API ini menyediakan data tentang game gratis.</li>
-      <li><a href="https://apidocs.cheapshark.com/#a2620d3f-683e-0396-61e7-3fe4d30ea376">CheapShark API</a>: API ini memberikan informasi tentang penawaran game dan harga.</li>
     </ul>
 
-<h2 align="center">Bab IV: Video Penggunaan Website</h2>
+<h2 align="center">Bab IV: Video Penggunaan Aplikasi</h2>
 
   <div align="center">
     <video width="800" controls>
