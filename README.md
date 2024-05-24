@@ -77,7 +77,7 @@ Splashscreen adalah layar pertama yang muncul saat aplikasi dijalankan. Biasanya
 Fitur Sign In memungkinkan pengguna untuk masuk ke dalam aplikasi dengan menggunakan kredensial yang telah terdaftar, seperti email dan password atau metode autentikasi lainnya.
 <p align="center">
   <img src="https://github.com/201solafide/TubesPAM/assets/96344530/2fa08b38-fc56-46bf-915c-8d100d9ecaee" alt="Sign In" width="300">
-  <img src="https://github.com/201solafide/TubesPAM/assets/96344530/6e99a6e0-0c5e-4280-96c9-44484c27eece" alt="Sign In" width="300">
+  <img src="https://github.com/201solafide/TubesPAM/assets/96344530/d647dcea-4b81-4edd-a4cc-29e97b24ef3f" alt="Sign In" width="300">
 </p>
 <h3>3. Home</h3>
 Home adalah layar utama aplikasi yang menampilkan konten utama atau informasi yang relevan bagi pengguna. Ini bisa berupa berita terbaru, tampilan game, atau konten yang disesuaikan.
