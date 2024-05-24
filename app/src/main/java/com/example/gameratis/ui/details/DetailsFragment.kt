@@ -1,6 +1,8 @@
 package com.example.gameratis.ui.details
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.core.view.isVisible
@@ -90,6 +92,18 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                 }
                 toggleFavorite.isChecked = isChecked
             }
+
+            // Event Tombol Play
+            binding.btPlay.setOnClickListener {
+                openUrl(gameRatis.game_url)
+            }
         }
+    }
+
+    private fun openUrl(url: String) {
+        val uri = Uri.parse(url)
+        val i = Intent(Intent.ACTION_VIEW, uri)
+
+        startActivity(i)
     }
 }
