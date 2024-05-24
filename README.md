@@ -3,7 +3,7 @@
 
 <h2 align="center"> Video Penggunaan Aplikasi</h2>
 <p>
-  Untuk melihat video penggunaan aplikasi kami silahkan klik <a href="https://drive.google.com/file/d/1PbvQ8ZUn_R5_BKX0rbAgJs8uyxP3bwT4/view?usp=drive_link">link video</a> berikut
+  Untuk melihat video penggunaan aplikasi kami silahkan klik <a href="https://drive.google.com/file/d/1yXUwTcXsjyxCsBVNoI4mr5UglmpXvPwC/view?usp=sharing">link video</a> berikut
 </p>
 <h2 align="center"> Dowload Aplikasi</h2> 
     
