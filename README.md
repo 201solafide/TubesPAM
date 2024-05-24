@@ -6,6 +6,7 @@
       <source src="nama_video.mp4" type="video/mp4">
       Maaf, browser Anda tidak mendukung tag video.
     </video>
+  </div>
 <h2 align="center"> Dowload Aplikasi</h2> 
     
 <p align="justify"> Aplikasi Android ini menyediakan pengguna dengan akses mudah ke daftar game-game menarik yang dapat dimainkan secara gratis. Memanfaatkan layanan API FreeToGame, pengguna dapat dengan cepat menemukan berbagai judul game berkualitas tanpa biaya. Dengan antarmuka yang intuitif dan user-friendly, pengguna dapat menjelajahi daftar game, membaca deskripsi singkat, dan menemukan tautan langsung untuk mengunduh atau memainkan game secara online. Dengan aplikasi ini, pengguna dapat menikmati pengalaman bermain game yang menyenangkan tanpa harus khawatir tentang biaya. </p>
@@ -23,7 +24,7 @@
     <h4>Nasrul Alfin Prassetyo - 121140001 (pengujian dan dokumentasi)</h4>
   </li>
   <li>
-    <h4>Winnerson Laila - 121140121 (penguji dan dokumentasi)</h4>
+    <h4>Winnerson Laia - 121140121 (penguji dan dokumentasi)</h4>
   </li>
   <li>
     <h4>Muhammad Faried Halim - 121140197 (pengujian dan dokumentasi)</h4>
@@ -107,8 +108,7 @@ Fitur Detail Game menyediakan informasi lengkap tentang suatu game, termasuk des
  
 </p>
 
-
- <h2>Bab III: Metode dan Penjelasan API</h2>
+<h2>Bab III: Metode dan Penjelasan API</h2>
 
   <div class="method">
     <h3>Metode Waterfall</h3>
