@@ -54,6 +54,8 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                         progressBar.isVisible = false
                         tvDescription.isVisible = true
                         tvGameTitle.isVisible = true
+                        tvGenre.isVisible = true
+                        tvPlatform.isVisible = true
                         return false
                     }
 
@@ -76,6 +78,8 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
 
             tvDescription.text = gameRatis.short_description
             tvGameTitle.text = gameRatis.title
+            tvGenre.text = gameRatis.genre
+            tvPlatform.text = gameRatis.platform
 
             toggleFavorite.setOnClickListener {
                 isChecked = !isChecked
