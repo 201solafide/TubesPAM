@@ -64,45 +64,49 @@
 
 <h2 align="center"> Bab II: Penjelasan Fitur Aplikasi </h2>
 
-<h3>1. Splashscreen</h3> 
+Berikut adalah versi yang telah diperbaiki dengan gambar yang benar dirujuk:
+
+<h3>1. Splashscreen</h3>
 Splashscreen adalah layar pertama yang muncul saat aplikasi dijalankan. Biasanya digunakan untuk menampilkan logo atau pesan selamat datang sementara aplikasi memuat.
 <p align="center">
-  
+  <img src="https://github.com/201solafide/TubesPAM/assets/96344530/d8371afa-d68d-489c-882e-8936cfacf3d7" alt="Splashscreen">
 </p>
 
-<h3>2. Sign In</h3> 
+<h3>2. Sign In</h3>
 Fitur Sign In memungkinkan pengguna untuk masuk ke dalam aplikasi dengan menggunakan kredensial yang telah terdaftar, seperti email dan password atau metode autentikasi lainnya.
 <p align="center">
- 
+  <img src="https://github.com/201solafide/TubesPAM/assets/96344530/2fa08b38-fc56-46bf-915c-8d100d9ecaee" alt="Sign In">
+  <img src="https://github.com/201solafide/TubesPAM/assets/96344530/6e99a6e0-0c5e-4280-96c9-44484c27eece" alt="Sign In">
 </p>
 
-<h3>3. Home</h3> 
+<h3>3. Home</h3>
 Home adalah layar utama aplikasi yang menampilkan konten utama atau informasi yang relevan bagi pengguna. Ini bisa berupa berita terbaru, tampilan game, atau konten yang disesuaikan.
 <p align="center">
- 
+  <img src="https://github.com/201solafide/TubesPAM/assets/96344530/f6589a83-7059-4ef2-b4b0-c17bf26fdbd1" alt="Home">
 </p>
 
-<h3>4. Profil</h3> 
+<h3>4. Profil</h3>
 Fitur Profil memungkinkan pengguna untuk melihat dan mengelola informasi pribadi mereka. Pengguna dapat mengubah foto profil, mengedit informasi kontak, atau mengatur preferensi pengguna.
 <p align="center">
- 
+  <img src="https://github.com/201solafide/TubesPAM/assets/96344530/ba1dc408-f5f7-486a-8167-af26f4c5ff0f" alt="Profil">
 </p>
 
-<h3>5. Favorit</h3> 
+<h3>5. Favorit</h3>
 Fitur Favorit memungkinkan pengguna untuk menandai atau menyimpan item yang mereka sukai atau ingin simpan untuk akses cepat di kemudian hari, seperti game favorit atau konten lainnya.
 <p align="center">
- 
+  <img src="https://github.com/201solafide/TubesPAM/assets/96344530/01ac371e-fd55-4319-85e9-2667e43dfaf2" alt="Favorit">
 </p>
 
-<h3>6. Search </h3> 
+<h3>6. Search</h3>
 Fitur Search memungkinkan pengguna untuk mencari konten dalam aplikasi, seperti game, pengguna lain, atau informasi lainnya berdasarkan kriteria tertentu.
 <p align="center">
+  <img src="https://github.com/201solafide/TubesPAM/assets/96344530/ba1dc408-f5f7-486a-8167-af26f4c5ff0f" alt="Search">
 </p>
 
-<h3>7. Detail Game</h3> 
+<h3>7. Detail Game</h3>
 Fitur Detail Game menyediakan informasi lengkap tentang suatu game, termasuk deskripsi, gambar, ulasan, dan informasi terkait lainnya. Pengguna dapat melihat detail ini sebelum memutuskan untuk memainkan atau membeli game tersebut.
 <p align="center">
- 
+  <img src="https://github.com/201solafide/TubesPAM/assets/96344530/80ded2b6-da85-478f-a46d-a5c797d6e63b" alt="Detail Game">
 </p>
 
 <h2>Bab III: Metode dan Penjelasan API</h2>
