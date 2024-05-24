@@ -1,12 +1,8 @@
 <h1 align="center"> DAFTAR GAME GRATIS </h1>
 <h2 align="center"> Video Penggunaan Aplikasi</h2>
-
-  <div align="center">
-    <video width="800" controls>
-      <source src="nama_video.mp4" type="video/mp4">
-      Maaf, browser Anda tidak mendukung tag video.
-    </video>
-  </div>
+<p>
+  Untuk menonton video penggunaan aplikasi kami silahkan klik <a href="https://drive.google.com/file/d/1PbvQ8ZUn_R5_BKX0rbAgJs8uyxP3bwT4/view?usp=drive_link">link video</a> berikut
+</p>
 <h2 align="center"> Dowload Aplikasi</h2> 
     
 <p align="justify"> Aplikasi Android ini menyediakan pengguna dengan akses mudah ke daftar game-game menarik yang dapat dimainkan secara gratis. Memanfaatkan layanan API FreeToGame, pengguna dapat dengan cepat menemukan berbagai judul game berkualitas tanpa biaya. Dengan antarmuka yang intuitif dan user-friendly, pengguna dapat menjelajahi daftar game, membaca deskripsi singkat, dan menemukan tautan langsung untuk mengunduh atau memainkan game secara online. Dengan aplikasi ini, pengguna dapat menikmati pengalaman bermain game yang menyenangkan tanpa harus khawatir tentang biaya. </p>
