@@ -10,7 +10,7 @@ class GamePagingSource(
     private val gameAPI: GameAPI,
     private val platform: String?,
     private val category: String?,
-    private val sortBy: String?
+    private val sortBy: String?,
 
 ) : PagingSource<Int, GameRatis>() {
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, GameRatis> {

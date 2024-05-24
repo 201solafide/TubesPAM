@@ -91,8 +91,11 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
             tvGameTitle.text = gameRatis.title
             tvGenre.text = gameRatis.genre
             tvPlatform.text = gameRatis.platform
+            tvDeveloper.text = "Developer"
             tvDeveloper1.text = gameRatis.developer
+            tvPublisher.text = "Publisher"
             tvPublisher1.text = gameRatis.publisher
+            tvReleaseDate.text = "Release Date"
             tvReleaseDate1.text = gameRatis.release_date
 
             toggleFavorite.setOnClickListener {

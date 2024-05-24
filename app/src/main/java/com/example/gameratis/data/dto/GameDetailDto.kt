@@ -1,5 +1,6 @@
 package com.example.gameratis.data.dto
 
+
 data class GameDetailDto(
     val description: String,
     val developer: String,

@@ -1,5 +1,6 @@
 package com.example.gameratis.data.remote
 
+import com.example.gameratis.data.dto.GameDetailDto
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -19,4 +20,9 @@ interface GameAPI {
         @Query("category") category: String,
         @Query("sort-by") sortBy: String
     ): List<GameRatis>
+
+    @GET("api/game")
+    suspend fun getGameDetailById(
+        @Query("id") gameId: Int
+    ): GameDetailDto
 }

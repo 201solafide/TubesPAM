@@ -29,11 +29,11 @@
             android:id="@+id/action_nav_favorite_to_nav_details"
             app:destination="@id/nav_details" />
         <action
-            android:id="@+id/action_nav_favorite_to_nav_game"
-            app:destination="@id/nav_game" />
-        <action
             android:id="@+id/action_nav_favorite_to_nav_profile"
             app:destination="@id/nav_profile" />
+        <action
+            android:id="@+id/action_nav_favorite_to_nav_game"
+            app:destination="@id/nav_game" />
     </fragment>
     <fragment
         android:id="@+id/nav_details"
@@ -43,24 +43,12 @@
         <argument
             android:name="gameRatis"
             app:argType="com.example.gameratis.data.remote.GameRatis" />
-        <action
-            android:id="@+id/action_nav_details_to_nav_game"
-            app:destination="@id/nav_game" />
-        <action
-            android:id="@+id/action_nav_details_to_nav_favorite"
-            app:destination="@id/nav_favorite" />
-        <action
-            android:id="@+id/action_nav_details_to_nav_profile"
-            app:destination="@id/nav_profile" />
     </fragment>
     <fragment
         android:id="@+id/nav_profile"
         android:name="com.example.gameratis.ui.profile.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" >
-        <action
-            android:id="@+id/action_nav_profile_to_nav_details"
-            app:destination="@id/nav_details" />
         <action
             android:id="@+id/action_nav_profile_to_nav_favorite"
             app:destination="@id/nav_favorite" />
