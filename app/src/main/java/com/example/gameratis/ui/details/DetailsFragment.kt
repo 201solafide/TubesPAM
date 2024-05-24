@@ -57,7 +57,16 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                         tvDescription.isVisible = true
                         tvGameTitle.isVisible = true
                         tvGenre.isVisible = true
+                        tvGenre1.isVisible = true
                         tvPlatform.isVisible = true
+                        tvPlatform1.isVisible = true
+                        tvDeveloper.isVisible = true
+                        tvDeveloper1.isVisible = true
+                        tvPublisher.isVisible = true
+                        tvPublisher1.isVisible = true
+                        tvReleaseDate.isVisible = true
+                        tvReleaseDate1.isVisible = true
+
                         return false
                     }
 
@@ -82,6 +91,9 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
             tvGameTitle.text = gameRatis.title
             tvGenre.text = gameRatis.genre
             tvPlatform.text = gameRatis.platform
+            tvDeveloper1.text = gameRatis.developer
+            tvPublisher1.text = gameRatis.publisher
+            tvReleaseDate1.text = gameRatis.release_date
 
             toggleFavorite.setOnClickListener {
                 isChecked = !isChecked

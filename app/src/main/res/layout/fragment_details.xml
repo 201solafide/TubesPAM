@@ -99,6 +99,121 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"/>
 
+            <TextView
+                android:id="@+id/tv_developer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_description"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                tools:text="Developer"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_developer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_description"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                tools:text="Developer"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_developer"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                tools:text="Publisher"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_publisher1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_developer"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                tools:text="Publisher"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_publisher"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                tools:text="Release Date"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_release_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_publisher"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                tools:text="Release Date"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_genre1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_release_date"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                tools:text="Genre"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@id/tv_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_release_date"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                tools:text="Genre"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_platform1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_genre1"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                tools:text="Platform"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@id/tv_platform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_genre1"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="gone"
+                tools:text="Platform"
+                tools:visibility="visible" />
+
         </RelativeLayout>
 
     </ScrollView>
