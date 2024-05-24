@@ -28,6 +28,10 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="194dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/favorite_toggle"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
@@ -68,6 +72,7 @@
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:progressTint="#3A3A3A" />
 
 </FrameLayout>
