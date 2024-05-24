@@ -73,7 +73,7 @@ Splashscreen adalah layar pertama yang muncul saat aplikasi dijalankan. Biasanya
 <p align="center">
   <img src="https://github.com/201solafide/TubesPAM/assets/96344530/d8371afa-d68d-489c-882e-8936cfacf3d7" alt="Splashscreen" width="300">
 </p>
-<h3>2. Sign In </h3>
+<h3>2. Sign In dan Register </h3>
 Fitur Sign In memungkinkan pengguna untuk masuk ke dalam aplikasi dengan menggunakan kredensial yang telah terdaftar, seperti email dan password atau metode autentikasi lainnya.
 <p align="center">
   <img src="https://github.com/201solafide/TubesPAM/assets/96344530/2fa08b38-fc56-46bf-915c-8d100d9ecaee" alt="Sign In" width="300">
@@ -97,7 +97,7 @@ Fitur Favorit memungkinkan pengguna untuk menandai atau menyimpan item yang mere
 <h3>6. Search</h3>
 Fitur Search memungkinkan pengguna untuk mencari konten dalam aplikasi, seperti game, pengguna lain, atau informasi lainnya berdasarkan kriteria tertentu.
 <p align="center">
-  <img src="https://github.com/201solafide/TubesPAM/assets/96344530/ba1dc408-f5f7-486a-8167-af26f4c5ff0f" alt="Search" width="300">
+  <img src="https://github.com/201solafide/TubesPAM/assets/96344530/b60cc6a9-85aa-4b5d-a94e-b794092c525a" alt="Search" width="300">
 </p>
 <h3>7. Detail Game</h3>
 Fitur Detail Game menyediakan informasi lengkap tentang suatu game, termasuk deskripsi, gambar, ulasan, dan informasi terkait lainnya. Pengguna dapat melihat detail ini sebelum memutuskan untuk memainkan atau membeli game tersebut.
