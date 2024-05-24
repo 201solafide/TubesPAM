@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_nav_game_to_nav_favorite"
             app:destination="@id/nav_favorite" />
+        <action
+            android:id="@+id/action_nav_game_to_nav_profile"
+            app:destination="@id/nav_profile" />
     </fragment>
     <fragment
         android:id="@+id/nav_favorite"
@@ -43,5 +46,11 @@
         <action
             android:id="@+id/action_nav_details_to_nav_favorite"
             app:destination="@id/nav_favorite" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.gameratis.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
     </fragment>
 </navigation>
