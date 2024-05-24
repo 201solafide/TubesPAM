@@ -1,20 +1,13 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="108dp"
-    android:height="108dp"
-    android:viewportWidth="108"
-    android:viewportHeight="108">
-    <group>
-        <path
-            android:name="Background"
-            android:fillColor="#FFFFFF"
-            android:pathData="M0,0h108v108h-108z" />
-        <text
-            android:name="GameRatisText"
-            android:fontFamily="sans-serif"
-            android:fillColor="#A9A9A9"
-            android:textSize="36dp"
-            android:text="GameRatis"
-            android:x="12dp"
-            android:y="64dp" />
-    </group>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:tint="#2B2B2B"
+    android:viewportHeight="24"
+    android:viewportWidth="24"
+    android:width="24dp">
+
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M21,6L3,6c-1.1,0 -2,0.9 -2,2v8c0,1.1 0.9,2 2,2h18c1.1,0 2,-0.9 2,-2L23,8c0,-1.1 -0.9,-2 -2,-2zM11,13L8,13v3L6,16v-3L3,13v-2h3L6,8h2v3h3v2zM15.5,15c-0.83,0 -1.5,-0.67 -1.5,-1.5s0.67,-1.5 1.5,-1.5 1.5,0.67 1.5,1.5 -0.67,1.5 -1.5,1.5zM19.5,12c-0.83,0 -1.5,-0.67 -1.5,-1.5S18.67,9 19.5,9s1.5,0.67 1.5,1.5 -0.67,1.5 -1.5,1.5z"/>
+
 </vector>

@@ -32,10 +32,8 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
 
         binding.apply {
             val gameRatis = args.gameRatis
-            Glide.with(this@DetailsFragment)
-                .load(gameRatis.thumbnail)
-                .error(R.drawable.ic_error)
-                .listener(object : RequestListener<Drawable>{
+            Glide.with(this@DetailsFragment).load(gameRatis.thumbnail).error(R.drawable.ic_error)
+                .listener(object : RequestListener<Drawable> {
                     override fun onLoadFailed(
                         e: GlideException?,
                         model: Any?,
@@ -65,8 +63,8 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
             var isChecked = false
             CoroutineScope(Dispatchers.IO).launch {
                 val count = viewModel.checkGame(gameRatis.id)
-                withContext(Dispatchers.Main){
-                    if (count > 0){
+                withContext(Dispatchers.Main) {
+                    if (count > 0) {
                         toggleFavorite.isChecked = true
                         isChecked = true
                     } else {
@@ -81,7 +79,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
 
             toggleFavorite.setOnClickListener {
                 isChecked = !isChecked
-                if (isChecked){
+                if (isChecked) {
                     viewModel.addToFavorite(gameRatis)
                 } else {
                     viewModel.removeFromFavorite(gameRatis.id)

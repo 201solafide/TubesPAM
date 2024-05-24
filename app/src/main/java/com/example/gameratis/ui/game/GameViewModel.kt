@@ -6,6 +6,8 @@ import android.os.Parcelable
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
+import androidx.lifecycle.viewModelScope
+import androidx.paging.cachedIn
 import com.example.gameratis.data.remote.GameRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
@@ -33,7 +35,7 @@ class GameViewModel @Inject constructor(private val repository: GameRepository,
                 if (!sortBy.isEmpty() || !category.isEmpty() || !platform.isEmpty()){
                     repository.getSearchGames(platform, category, sortBy)
                 }else {
-                    repository.getPosts()
+                    repository.getPosts().cachedIn(viewModelScope)
                 }
             }
         }
