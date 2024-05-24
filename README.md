@@ -1,11 +1,12 @@
 <h1 align="center"> DAFTAR GAME GRATIS </h1>
+<p align="justify"> Aplikasi Android ini menyediakan pengguna dengan akses mudah ke daftar game-game menarik yang dapat dimainkan secara gratis. Memanfaatkan layanan API FreeToGame, pengguna dapat dengan cepat menemukan berbagai judul game berkualitas tanpa biaya. Dengan antarmuka yang intuitif dan user-friendly, pengguna dapat menjelajahi daftar game, membaca deskripsi singkat, dan menemukan tautan langsung untuk mengunduh atau memainkan game secara online. Dengan aplikasi ini, pengguna dapat menikmati pengalaman bermain game yang menyenangkan tanpa harus khawatir tentang biaya. </p>
+
 <h2 align="center"> Video Penggunaan Aplikasi</h2>
 <p>
   Untuk melihat video penggunaan aplikasi kami silahkan klik <a href="https://drive.google.com/file/d/1PbvQ8ZUn_R5_BKX0rbAgJs8uyxP3bwT4/view?usp=drive_link">link video</a> berikut
 </p>
 <h2 align="center"> Dowload Aplikasi</h2> 
     
-<p align="justify"> Aplikasi Android ini menyediakan pengguna dengan akses mudah ke daftar game-game menarik yang dapat dimainkan secara gratis. Memanfaatkan layanan API FreeToGame, pengguna dapat dengan cepat menemukan berbagai judul game berkualitas tanpa biaya. Dengan antarmuka yang intuitif dan user-friendly, pengguna dapat menjelajahi daftar game, membaca deskripsi singkat, dan menemukan tautan langsung untuk mengunduh atau memainkan game secara online. Dengan aplikasi ini, pengguna dapat menikmati pengalaman bermain game yang menyenangkan tanpa harus khawatir tentang biaya. </p>
 
 
 <h2 align="center">Anggota Proyek</h2>
@@ -63,42 +64,42 @@
 
 <h2 align="center"> Bab II: Penjelasan Fitur Aplikasi </h2>
 
-## 1. Splashscreen
+<h3>1. Splashscreen</h3> 
 Splashscreen adalah layar pertama yang muncul saat aplikasi dijalankan. Biasanya digunakan untuk menampilkan logo atau pesan selamat datang sementara aplikasi memuat.
 <p align="center">
   
 </p>
 
-## 2. Sign In
+<h3>2. Sign In</h3> 
 Fitur Sign In memungkinkan pengguna untuk masuk ke dalam aplikasi dengan menggunakan kredensial yang telah terdaftar, seperti email dan password atau metode autentikasi lainnya.
 <p align="center">
  
 </p>
 
-## 3. Home
+<h3>3. Home</h3> 
 Home adalah layar utama aplikasi yang menampilkan konten utama atau informasi yang relevan bagi pengguna. Ini bisa berupa berita terbaru, tampilan game, atau konten yang disesuaikan.
 <p align="center">
  
 </p>
 
-## 4. Profil
+<h3>4. Profil</h3> 
 Fitur Profil memungkinkan pengguna untuk melihat dan mengelola informasi pribadi mereka. Pengguna dapat mengubah foto profil, mengedit informasi kontak, atau mengatur preferensi pengguna.
 <p align="center">
  
 </p>
 
-## 5. Favorit
+<h3>5. Favorit</h3> 
 Fitur Favorit memungkinkan pengguna untuk menandai atau menyimpan item yang mereka sukai atau ingin simpan untuk akses cepat di kemudian hari, seperti game favorit atau konten lainnya.
 <p align="center">
  
 </p>
 
-## 6. Search
+<h3>6. Search </h3> 
 Fitur Search memungkinkan pengguna untuk mencari konten dalam aplikasi, seperti game, pengguna lain, atau informasi lainnya berdasarkan kriteria tertentu.
 <p align="center">
 </p>
 
-## 7. Detail Game
+<h3>7. Detail Game</h3> 
 Fitur Detail Game menyediakan informasi lengkap tentang suatu game, termasuk deskripsi, gambar, ulasan, dan informasi terkait lainnya. Pengguna dapat melihat detail ini sebelum memutuskan untuk memainkan atau membeli game tersebut.
 <p align="center">
  
@@ -117,7 +118,7 @@ Fitur Detail Game menyediakan informasi lengkap tentang suatu game, termasuk des
   </div>
 
   <div class="api">
-    <h3>API yang Kami Gunakan</h3>
+    <h2>Bab IV: API yang Kami Gunakan</h2>
     <p>Berikut adalah API yang kami gunakan untuk aplikasi kami:</p>
     <ul>
       <li><a href="https://www.freetogame.com/api-doc">FreeToGame API</a>: API ini menyediakan data tentang game gratis.</li>
