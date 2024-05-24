@@ -73,7 +73,7 @@ Splashscreen adalah layar pertama yang muncul saat aplikasi dijalankan. Biasanya
 <p align="center">
   <img src="https://github.com/201solafide/TubesPAM/assets/96344530/d8371afa-d68d-489c-882e-8936cfacf3d7" alt="Splashscreen" width="300">
 </p>
-<h3>2. Sign In</h3>
+<h3>2. Sign In </h3>
 Fitur Sign In memungkinkan pengguna untuk masuk ke dalam aplikasi dengan menggunakan kredensial yang telah terdaftar, seperti email dan password atau metode autentikasi lainnya.
 <p align="center">
   <img src="https://github.com/201solafide/TubesPAM/assets/96344530/2fa08b38-fc56-46bf-915c-8d100d9ecaee" alt="Sign In" width="300">
