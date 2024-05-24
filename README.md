@@ -6,7 +6,9 @@
   Untuk melihat video penggunaan aplikasi kami silahkan klik <a href="https://drive.google.com/file/d/1yXUwTcXsjyxCsBVNoI4mr5UglmpXvPwC/view?usp=sharing">link video</a> berikut
 </p>
 <h2 align="center"> Dowload Aplikasi</h2> 
-    
+<p>
+  Untuk mendownload aplikasi kami silahkan klik <a href="https://drive.google.com/drive/folders/1K5O2sveL91REw3DQMKUvFgK37WEpUwGo">link drive</a> berikut
+</p>    
 
 
 <h2 align="center">Anggota Proyek</h2>
