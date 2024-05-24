@@ -40,27 +40,3 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }
-
-//@AndroidEntryPoint
-//class MainActivity : ComponentActivity() {
-//    private lateinit var navController: NavController
-//
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        val binding = ActivityMainBinding.inflate(layoutInflater)
-//        setContentView(binding.root)
-//
-//        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_contain) as NavHostFragment
-//        navController = navHostFragment.findNavController()
-//
-//        val appBarConfiguration = AppBarConfiguration.Builder(
-//            R.id.nav_game, R.id.nav_favorite
-//        ).build()
-//
-//        setupActionBarWithNavController(navController, appBarConfiguration)
-//        binding.apply {
-//            navBottom.setupWithNavController(navController)
-//        }
-//    }
-//}
-
