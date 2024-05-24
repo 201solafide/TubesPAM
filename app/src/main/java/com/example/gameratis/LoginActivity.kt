@@ -33,12 +33,17 @@ class LoginActivity : AppCompatActivity() {
             val username = binding.usernameEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
             signIn(username, password)
+            getUsername(username)
         }
 
         // Set onClickListener for registration button
         binding.registerButton.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
+    }
+
+    private fun getUsername(username: String){
+        active_user = username
     }
 
     private fun signIn(username: String, password: String) {
@@ -80,4 +85,9 @@ class LoginActivity : AppCompatActivity() {
             apply()
         }
     }
+
+    companion object {
+        var active_user: String? = null
+    }
+
 }

@@ -78,7 +78,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                 val count = viewModel.checkGame(gameRatis.id)
                 withContext(Dispatchers.Main) {
                     if (count > 0) {
-                        toggleFavorite.isChecked = true
+                        toggleFavorite.isChecked = false
                         isChecked = true
                     } else {
                         toggleFavorite.isChecked = true
